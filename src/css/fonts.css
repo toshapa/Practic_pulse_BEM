@@ -112,10 +112,32 @@
 
 @font-face {
 	font-family: 'MuseoModerno';
-	src: url('../fonts/MuseoModerno-Italic-VariableFont_wght.ttf');
+	/* src: url('../fonts/MuseoModerno-Italic-VariableFont_wght.ttf'); */
+	/* src: url('../fonts/MuseoModerno-Black.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-BlackItalic.ttf') format('truetype');  */
+	/* src: url('../fonts/MuseoModerno-Bold.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-BoldItalic.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-ExtraBold.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-ExtraLight.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-ExtraLightItalic.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-Italic-VariableFont_wght.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-Italic.ttf') format('truetype'); */
+	
+	/* src: url('../fonts/MuseoModerno-LightItalic.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-Medium.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-MediumItalic.ttf') format('truetype'); */
+	src: url('../fonts/MuseoModerno-Regular.ttf') format('truetype');
+	
+	/* src: url('../fonts/MuseoModerno-Thin.ttf') format('truetype'); */
+	/* src: url('../fonts/MuseoModerno-ThinItalic.ttf') format('truetype'); */
 }
 
 @font-face {
-	font-family: 'MuseoModerno';
-	src: url('../fonts/MuseoModerno-VariableFont_wght.ttf');
+	font-family: 'MuseoModernoSemiBold';
+	src: url('../fonts/MuseoModerno-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MuseoModernoLight';
+	src: url('../fonts/MuseoModerno-Light.ttf') format('truetype');
 }
