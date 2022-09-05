@@ -4,6 +4,8 @@ const sass = require('gulp-sass')(require('sass'))
 const rename = require("gulp-rename")
 const autoprefixer = require('gulp-autoprefixer')
 const cleanCSS = require('gulp-clean-css')
+const browserslist = require('browserslist')
+const autoPrefixer = require('gulp-autoprefixer')
 
 
 gulp.task('server', () => {
@@ -32,6 +34,7 @@ gulp.task('styles', () =>{
 gulp.task('watch', () => {
     gulp.watch('src/css/sass/**/*.+(scss|sass)', gulp.parallel('styles'))
     gulp.watch('src/*.html').on('change', browserSync.reload)
+    gulp.watch('src/js/*.js').on('change', browserSync.reload);
 })
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'))

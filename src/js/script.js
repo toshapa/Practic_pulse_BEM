@@ -18,6 +18,7 @@
 //     );
 //   });
 
+
 $(document).ready(function() {
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -38,6 +39,21 @@ $(document).ready(function() {
         changeItem('.catalog-item__content')
         changeItem('.catalog-item__list')
 
+        $("[data-modal=consultation]").on('click', function() {
+            $('.overlay, #consultation').fadeIn()
+        })
+
+        $('.modal__close').on('click', function() {
+            $('#consultation, .overlay, #thanks, #order').fadeOut()
+        })
+
+        $('.button_mini').each(function(i) {
+            $(this).on('click', function() {
+                $('.modal__descr').text($('.catalog-item__subtitle').eq(i).text())
+                $('.overlay, #order').on('click').fadeIn()
+            })
+            
+        })
 })
 
     let slider = tns({
