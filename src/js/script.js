@@ -19,6 +19,7 @@
 //   });
 
 
+
 $(document).ready(function() {
 
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -54,6 +55,42 @@ $(document).ready(function() {
             })
             
         })
+
+        function valid (form) {
+            $(form).validate({
+                    rules: {
+                        name: {
+                            required: true,
+                            minlength: 5
+                        },
+                        phone: "required",
+                        email: "required"
+                    },
+                    messages: {
+                        name: "Ну тут как бээ, Ваше имя должно быть!",
+                        phone: "А тут телефон, Ваш",
+                        email: 'Да-да!А тут Ваше мыло!'
+                    }
+                }
+            
+            )
+        }
+        // function btn (classes) {
+        //     $(classes).on('click', function(){
+        //         $('.modal').css({
+        //             'min-height': '477px'
+        //         })
+        //     })
+        // }
+        
+        // btn('.button_submit')
+        
+        
+                
+        valid('.feed-form_modal')
+        valid('#call_consul')
+        valid('#order form')
+
 })
 
     let slider = tns({

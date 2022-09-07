@@ -83,10 +83,10 @@
             <div class="consultation__descr">Просто заполните форму заявки <br/>
                 и мы перезвоним вам в течении 10 минут
             </div>
-            <form action="#" class="feed-form">
-                <input name="name" required type="text" placeholder="Ваше имя">
-                <input name="phone" required type="text" placeholder="Ваш телефон">
-                <input name="email" required type="email" placeholder="Ваш e-mail">
+            <form action="#" class="feed-form" id="call_consul">
+                <input name="name" type="text" placeholder="Ваше имя">
+                <input name="phone" type="tel" placeholder="Ваш телефон">
+                <input name="email" type="email" placeholder="Ваш e-mail">
 
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -440,9 +440,9 @@
             <div class="modal__subtittle"><h2>Просто заполните форму заявки</h2></div>
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
                 <form action="#" class="feed-form feed-form_modal">
-                    <input name="name" required type="text" placeholder="Ваше имя">
-                    <input name="phone" required type="text" placeholder="Ваш телефон">
-                    <input name="email" required type="email" placeholder="Ваш e-mail">
+                    <div class="modal__input"><input name="name" type="text" placeholder="Ваше имя"></div>
+                    <div class="modal__input"><input name="phone" type="tel" placeholder="Ваш телефон"></div>
+                    <div class="modal__input"><input name="email" type="email" placeholder="Ваш e-mail"></div>
                     <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
                 </form>
         </div>
@@ -451,12 +451,12 @@
             <div class="modal__close">&times;</div>
             <div class="modal__subtittle"><h2>Ваш заказ:</h2></div>
             <div class="modal__descr">Пульсометр Polar FT1</div>
-                <form action="#" class="feed-form feed-form_modal">
-                    <input name="name" required type="text" placeholder="Ваше имя">
-                    <input name="phone" required type="text" placeholder="Ваш телефон">
-                    <input name="email" required type="email" placeholder="Ваш e-mail">
-                    <button class="button button_submit">КУПИТЬ</button>
-                </form>
+            <form action="#" class="feed-form feed-form_modal">
+                <div class="modal__input"><input name="name" type="text" placeholder="Ваше имя"></div>
+                <div class="modal__input"><input name="phone" type="tel" placeholder="Ваш телефон"></div>
+                <div class="modal__input"><input name="email" type="email" placeholder="Ваш e-mail"></div>
+                <button class="button button_submit">КУПИТЬ</button>
+            </form>
         </div>
 
         <div class="modal modal__mini" id="thanks">
@@ -469,6 +469,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

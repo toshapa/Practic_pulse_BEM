@@ -12,23 +12,26 @@
     left: 50%
     transform: translate(-50%, -50%)
     width: 382px
-    min-height: 350px
+    min-height: 400px
     background: #F2F2F2
-    padding: 38px 40px 40px 40px
-    margin: 0 auto
+    // margin: 38px 40px 40px 40px
+    &__input
+        display: flex
+        flex-direction: column
+        
     &__close
         position: absolute
         top: 0
         right: -40px
         line-height: 40px
         font-size: 40px
-        color: #C70101
-        &:hocer
+        color: #331e1e
+        &:hover
             cursor: pointer
     &__subtittle
         font-style: normal
         font-weight: 700
-        font-size: 15px
+        font-size: 13px
         text-align: center
         line-height: 19px
     &__descr
@@ -42,7 +45,15 @@
         min-height: 140px
     &__subtittle
         margin-top: 35px
-
-
+    #phone-error, #email-error, #name-error
+        position: absolute
+        justify-content: end
+        font-size: 11px
+        color: #673535
+        padding: 5px
+    .error
+        border: 3px solid red
+    label.error
+        border: none
 #consultation, #order, #thanks
     display: none
